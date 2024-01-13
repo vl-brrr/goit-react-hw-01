@@ -1,0 +1,29 @@
+.item {
+  border-radius: 8px;
+  border: 2px solid #000;
+  width: 100%;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 84px;
+}
+.avatar {
+  margin-bottom: 8px;
+}
+.name {
+  font-weight: 700;
+}
+.status {
+  font-size: 12px;
+}
+
+.isOnline {
+  composes: status;
+  color: green;
+}
+.isOffline {
+  composes: status;
+
+  color: red;
+}
